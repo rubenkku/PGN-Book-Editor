@@ -68,14 +68,9 @@ Optimized for large books:
 ### 4) HTTP API Book Mode
 PGN Book Editor can act as a **GUI frontend** for a remote or local opening book server.
 
-Supported API calls (GET-based):
+Supported API calls (GET-based) allow querying, storing and editing book moves directly from the GUI.
 
-- `read(fen)`
-- `query(fen)`
-- `store(fen, depth, mindepth, multipv)`
-- `edit(fen, move, score, depth)`
-
-This allows:
+This enables:
 - Centralized opening books
 - Engine-generated books stored in databases
 - Multi-machine or team workflows
@@ -95,15 +90,31 @@ Engine and GUI settings are persisted between sessions.
 
 ---
 
-### 6) PGN Explorer (Multi-game files)
+### 6) Visual Move Highlighting on the Board
+The chessboard provides **clear visual feedback using arrows**, making analysis and navigation intuitive:
+
+- **Last played move** is shown with an arrow
+- **Engine best move** (`bestmove`) is marked with a dedicated arrow
+- **Ponder move** is displayed simultaneously when available
+- **Best book move** (from BIN or API book) is highlighted
+- **Live analysis best move** is continuously updated and marked
+
+This allows the user to instantly distinguish between:
+- played moves
+- book recommendations
+- engine suggestions  
+directly on the board, without reading text output.
+
+---
+
+### 7) PGN Explorer (Multi-game files)
 - Open large PGN files containing many games
 - Browse and select individual games
 - Load selected games directly into the editor
 
 ---
 
-### 7) ECO Opening Detection
-- Optional SQLite ECO database (`eco_openings.db`)
+### 8) ECO Opening Detection
 - Displays:
   - ECO code
   - Opening name
@@ -112,7 +123,25 @@ Engine and GUI settings are persisted between sessions.
 
 ---
 
-### 8) Additional Utilities
+### 9) Advanced Stockfish Dev Patching (Unique Feature)
+PGN Book Editor includes the ability to **patch the latest Stockfish Dev source code** to add features not available in the official engine:
+
+- **Support for up to 4 Polyglot BIN books simultaneously**
+  - Automatic book move selection
+  - Ideal for layered opening preparation
+- **Minimum Thinking Time option**
+  - Forces the engine to think at least a given amount of time
+  - Extremely important for **bullet and blitz time controls**
+  - Prevents instant low-quality moves in very short time settings
+
+This makes the patched engine especially suitable for:
+- online play
+- fast time controls
+- book-heavy opening strategies
+
+---
+
+### 10) Additional Utilities
 - Export board position as an image
 - Board setup editor
 - Promotion handling
@@ -140,4 +169,6 @@ Check the **Releases** section of the repository for prebuilt packages (if avail
 Install dependencies:
 ```bash
 pip install python-chess pillow chardet
-* (source code is not publicly shared)
+```
+
+*Note: This repository does not contain the complete application source code.*
