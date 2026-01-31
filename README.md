@@ -1,4 +1,4 @@
-<img src="./pgn-book-editor-screen.png" width="100%">
+<img src="./pgn-book-editor-screen.jpg" width="100%">
 
 # PGN Book Editor
 
