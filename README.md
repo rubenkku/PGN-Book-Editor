@@ -1,3 +1,5 @@
+<img src="./pgn-book-editor-screen.png" width="100%">
+
 # PGN Book Editor
 
 **PGN Book Editor** is a desktop application written in **Python (Tkinter)** designed for advanced chess work:  
