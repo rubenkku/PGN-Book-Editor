@@ -1,5 +1,3 @@
-<img src="https://github.com/rubenkku/PGN-Book-Editor/blob/main/pgn-book-creator-screen.jpg" width="100%">
-
 # PGN Book Editor
 
 **PGN Book Editor** is a desktop application written in **Python (Tkinter)** designed for advanced chess work:  
