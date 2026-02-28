@@ -1,4 +1,4 @@
-<img src="https://github.com/rubenkku/PGN-Book-Editor/blob/main/pgn-book-editor-screen.jpg" width="100%">
+[<img src="https://github.com/rubenkku/PGN-Book-Editor/blob/main/pgn-book-editor-screen.jpg" width="100%">](https://github.com/rubenkku/PGN-Book-Editor/blob/18d45ace90532314c5bd4b196bc2a7fdc0293078/pgn-book-editor-screen.jpg)
 
 # PGN Book Editor
 
